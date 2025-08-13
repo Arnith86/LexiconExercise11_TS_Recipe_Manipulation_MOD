@@ -58,10 +58,20 @@ export function part2(): void {
 
   // 10. The third ingredient in the list of ingredients to the paste is wrong.
   //     Change that specific ingredient to the correct one.
-  const ingredientsList = document.querySelectorAll<HTMLUListElement>(
+  const ingredientsListElements = document.querySelectorAll<HTMLUListElement>(
     ".ingredients-list-paste li"
   );
-  console.log(ingredientsList[2].innerText);
-  ingredientsList[2].innerText = "3tsk vaniljsocker";
-  console.log(ingredientsList[2].innerText);
+
+  ingredientsListElements[2].innerText = "3tsk vaniljsocker";
+
+  // 11. There is also a missing ingredient in the list of ingredients to the paste.
+  //     Look and see what it is and add that one the the end of the list.
+  const ingredientsList = document.querySelector<HTMLElement>(
+    ".ingredients-list-paste"
+  );
+
+  const lastIngredient = document.createElement("li");
+  lastIngredient.innerText = "400g naturell philadelphiaost";
+
+  ingredientsList?.appendChild(lastIngredient);
 }
