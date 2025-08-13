@@ -3,22 +3,27 @@ export function part1(): void {
   const favoriteRecipeName = document.querySelector<HTMLElement>(
     ".description-container #recipe-name"
   );
+
   console.log(favoriteRecipeName!.innerText);
 
   // 2. What HTML tag is used to display the Recipe name?
   const recipeTagUsed = document.querySelector<HTMLElement>(
     ".description-container #recipe-name"
   );
+
   console.log(favoriteRecipeName!.tagName);
 
   // 3. What is the font size of the paragraph tag with the class "description".
   const descriptionContent =
     document.querySelector<HTMLTextAreaElement>(".description");
+
   const descriptionFontSize = window.getComputedStyle(descriptionContent!);
+
   console.log(descriptionFontSize.fontSize);
 
   // 4. What is the value of the alt attribute on the image?
   const image = document.querySelector(".image-container img");
+
   console.log(image!.getAttribute("alt"));
 
   // 5. What is the dimensions and the url of the image?
@@ -38,12 +43,14 @@ export function part1(): void {
     height: image2!.naturalHeight,
     width: image2!.naturalWidth,
   };
+
   console.log(imageDimensionsAndUrl);
 
   // 6. How many ingredients has the paste?
   const pasteIngredients = document.querySelectorAll<HTMLUListElement>(
     ".ingredients-list-paste li"
   );
+
   console.log(pasteIngredients.length);
 
   // 7. Which is the forth element in the list containing the ingredients for the paste?
@@ -77,5 +84,6 @@ export function part1(): void {
 
     instructionsArray.push(instructionObject);
   });
+
   console.log(instructionsArray);
 }
