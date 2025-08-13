@@ -84,7 +84,6 @@ export function part2(): void {
 
   // 13. Two list elements of the list of instructions are incorrect.
   //     Find them and change them to the correct ones.
-  // 2 och -2 from bottom
   const wrongListElementText = document.querySelectorAll<HTMLOListElement>(
     ".instructions-list li"
   );

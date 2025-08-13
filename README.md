@@ -1,6 +1,12 @@
+# Lexicon Exercise 11 – DOM Manipulation
+
+This repository contains my solution to the **DOM Manipulation** exercise, which focuses on retrieving elements and making changes to HTML and CSS using the DOM API.
+
+The exercise instructions are provided below.
+
 ## Exercises on DOM Manipulation Part 1
 
-### Getting data from the DOM. 
+### Getting data from the DOM.
 
 #### In this exercise you will try and get some data from the provided recipe website.
 
@@ -47,7 +53,7 @@ https://www.w3schools.com/jsref/dom_obj_all.asp
 1. The logo text of the site has the wrong color. Change it to the correct one.
 
 2. The alignment of the elements inside the header element are wrong. Change it to the correct one. `Hint`, check the flex properties for the correct alignment. Here is a link that might help:
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 3. The header has a border at the bottom, but it has the wrong color. Change it do the correct one.
 
