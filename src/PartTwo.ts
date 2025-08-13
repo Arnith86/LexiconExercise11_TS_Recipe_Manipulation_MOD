@@ -74,4 +74,11 @@ export function part2(): void {
   lastIngredient.innerText = "400g naturell philadelphiaost";
 
   ingredientsList?.appendChild(lastIngredient);
+
+  // 12. The text "Instructions" to the left, beneath the image,
+  //     has some shadow styling applied to it. Remove that styling.
+  const instructionsHeader3 =
+    document.querySelector<HTMLElement>(".instructions");
+
+  instructionsHeader3?.classList.remove("shadow");
 }
