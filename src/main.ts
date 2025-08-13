@@ -31,7 +31,7 @@ correctLink.addEventListener("click", () => {
 
   // Uncomment this function invocation below
   part1();
-  console.log("Correct version loaded");
+  // console.log("Correct version loaded");
 });
 
 wrongLink.addEventListener("click", () => {
