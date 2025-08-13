@@ -55,4 +55,13 @@ export function part2(): void {
   );
 
   ingredientsListBottom!.replaceWith(firstIngredient, secondIngredient);
+
+  // 10. The third ingredient in the list of ingredients to the paste is wrong.
+  //     Change that specific ingredient to the correct one.
+  const ingredientsList = document.querySelectorAll<HTMLUListElement>(
+    ".ingredients-list-paste li"
+  );
+  console.log(ingredientsList[2].innerText);
+  ingredientsList[2].innerText = "3tsk vaniljsocker";
+  console.log(ingredientsList[2].innerText);
 }
